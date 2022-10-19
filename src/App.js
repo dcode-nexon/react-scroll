@@ -14,7 +14,7 @@ function App() {
 		<>
 			<Visual />
 			<News />
-			<Vids />
+			<Vids Scrolled={Scrolled} currentPos={Pos[2]} />
 			<Pics />
 			<Btns setPos={setPos} setScrolled={setScrolled} />
 		</>

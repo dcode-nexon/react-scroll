@@ -5,6 +5,7 @@ function Btns({ setPos, setScrolled }) {
 	const pos = useRef([]);
 	const btnRef = useRef(null);
 	const speed = 500;
+	const num = 4;
 
 	//각 섹션의 세로위치값 구하는 함수
 	const getPos = () => {
@@ -48,7 +49,7 @@ function Btns({ setPos, setScrolled }) {
 
 	return (
 		<ul className='scroll_navi' ref={btnRef}>
-			{Array(4)
+			{Array(num)
 				.fill()
 				.map((_, idx) => (
 					<li
